@@ -1,0 +1,211 @@
+{
+  "easycom": {
+    "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+  },
+  "pages": [
+    {
+      "path": "pages/login/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/home/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/classify/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/commodity/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/order/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/mine/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/exception/404",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "pages-home",
+      "pages": [
+        {
+          "path": "pages/module/index",
+          "style": {
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages-classify",
+      "pages": [
+        {
+          "path": "pages/edit/good-classify",
+          "style": {
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "pages/list/good-classify",
+          "style": {
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages-commodity",
+      "pages": [
+        {
+          "path": "pages/edit/commodity",
+          "style": {
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "pages/list/commodity",
+          "style": {
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "pages/detail/commodity",
+          "style": {
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages-order",
+      "pages": [
+        {
+          "path": "pages/edit/user",
+          "style": {
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "pages/list/user",
+          "style": {
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "pages/edit/order",
+          "style": {
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "pages/list/order",
+          "style": {
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "pages/view/order",
+          "style": {
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "pages/list/commodity",
+          "style": {
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages-mine",
+      "pages": [
+        {
+          "path": "pages/log/index",
+          "style": {
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "pages/about/index",
+          "style": {
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages-home/pages/module/index": {
+      "network": "all",
+      "packages": ["__APP__"]
+    },
+    "pages/classify/index": {
+      "network": "all",
+      "packages": ["pages-classify"]
+    },
+    "pages/commodity/index": {
+      "network": "all",
+      "packages": ["pages-commodity"]
+    },
+    "pages/order/index": {
+      "network": "all",
+      "packages": ["pages-order"]
+    },
+    "pages-mine/pages/about/index": {
+      "network": "all",
+      "packages": ["pages-mine"]
+    }
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Matrix",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#909399",
+    "selectedColor": "#303133",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/index"
+      },
+      {
+        "pagePath": "pages/classify/index"
+      },
+      {
+        "pagePath": "pages/commodity/index"
+      },
+      {
+        "pagePath": "pages/order/index"
+      },
+      {
+        "pagePath": "pages/mine/index"
+      }
+    ]
+  }
+}

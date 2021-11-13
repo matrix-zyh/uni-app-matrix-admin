@@ -1,0 +1,73 @@
+.commodity-image {
+  width: 100%;
+
+  image {
+    width: 100%;
+  }
+}
+
+.commodity-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  .commodity-header__title {
+    font-size: 36upx;
+    color: #2c2c2c;
+  }
+
+  .commodity-header__reserve {
+    font-size: 26upx;
+    color: #999999;
+  }
+}
+
+.commodity-tip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .commodity-code {
+    font-size: 28upx;
+    color: #999999;
+  }
+
+  .commodity-symbol {
+    color: #ff7a05;
+    margin-right: 10upx;
+  }
+
+  .commodity-money {
+    font-size: 48upx;
+    color: #ff7a05;
+  }
+
+  .commodity-unit {
+    color: #ff7a05;
+    margin-left: 10upx;
+  }
+}
+
+.commodity-detail {
+  display: flex;
+  align-items: flex-start;
+
+  .commodity-detail__title {
+    width: 6em;
+    color: #999999;
+  }
+
+  .commodity-detail__content {
+    width: calc(100% - 6em);
+    color: #222222;
+  }
+}
+
+.commodity-detail:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.commodity-detail + .commodity-detail {
+  margin-top: 30upx;
+}

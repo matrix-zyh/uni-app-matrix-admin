@@ -1,0 +1,101 @@
+.text-white {
+  color: #ffffff;
+}
+
+.bg-image {
+  width: 100%;
+  position: relative;
+
+  .statistics {
+    width: 100%;
+    padding: 0 50upx;
+    position: absolute;
+    top: 38%;
+    font-size: 32upx;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+
+    .cu-list.menu-avatar {
+      width: 100%;
+
+      .cu-item {
+        border: 0;
+        background-color: rgba(255, 255, 255, 0);
+
+        .content {
+          left: 174upx;
+
+          .shop-sign {
+            height: 40upx;
+            line-height: 40upx;
+            font-size: 24upx;
+            border-radius: 14upx 0 14upx 0;
+            color: #7a76ef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(45deg, #eeedfa, #dad8ed);
+            padding: 8upx 20upx;
+            margin-left: 30upx;
+          }
+        }
+      }
+
+      .cu-item::after {
+        border-bottom-style: none;
+      }
+
+      .cu-item.arrow:before {
+        position: absolute;
+        top: 0;
+        right: 30upx;
+        bottom: 0;
+        display: block;
+        margin: auto;
+        width: 30upx;
+        height: 30upx;
+        color: #fff;
+        content: '\e6a3';
+        text-align: center;
+        font-size: 34upx;
+        font-family: cuIcon;
+        line-height: 30upx;
+      }
+    }
+  }
+
+  image {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.wrap {
+  width: 100%;
+  position: relative;
+  padding: 0 30upx 30upx;
+
+  .wrap-content {
+    border-radius: 14upx;
+    margin-top: -120upx;
+    background-color: #fff;
+    overflow: hidden;
+
+    .cu-list.menu > .cu-item .content {
+      display: flex;
+      align-items: center;
+    }
+
+    .cu-list.menu > .cu-item .content > image {
+      width: 40upx;
+      height: 40upx;
+    }
+
+    .cu-list.menu > .cu-item.arrow {
+      padding-right: 70upx;
+    }
+  }
+}

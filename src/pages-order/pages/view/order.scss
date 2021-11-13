@@ -1,0 +1,81 @@
+.order-commodity {
+  background-color: #fff;
+
+  .order-commodity__list {
+    border-radius: 14upx;
+    display: flex;
+    justify-content: space-between;
+
+    .order-commodity__image {
+      width: 180upx;
+      height: 150upx;
+      border-radius: 8upx;
+      overflow: hidden;
+
+      image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .order-commodity__info {
+      width: 480upx;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .order-commodity__info-header {
+        font-size: 32upx;
+        color: #222;
+      }
+
+      .order-commodity__info-status {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .order-commodity__info-status__number {
+          color: #999;
+        }
+      }
+
+      .order-commodity__info-footer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .order-commodity__info-footer__money {
+          color: #ff7a05;
+        }
+      }
+    }
+  }
+
+  .order-commodity__list + .order-commodity__list {
+    margin-top: 20upx;
+  }
+}
+
+.commodity-detail {
+  display: flex;
+  align-items: flex-start;
+
+  .commodity-detail__title {
+    width: 6em;
+    color: #999999;
+  }
+
+  .commodity-detail__content {
+    width: calc(100% - 6em);
+    color: #222222;
+  }
+}
+
+.commodity-detail:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.commodity-detail + .commodity-detail {
+  margin-top: 30upx;
+}

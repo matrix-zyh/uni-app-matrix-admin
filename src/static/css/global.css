@@ -1,0 +1,12 @@
+/* 适配 ios 底部安全区域 */
+.ios-safety {
+  padding-bottom: calc(constant(safe-area-inset-bottom) / 2);
+  padding-bottom: calc(env(safe-area-inset-bottom) / 2);
+}
+
+/* 页面底部存在元素，且元素高度为 120upx，例如：Button。根据自己实际情况定义 */
+.ios-safety-btn {
+  padding-bottom: calc(120upx);
+  padding-bottom: calc(120upx + constant(safe-area-inset-bottom) / 2);
+  padding-bottom: calc(120upx + env(safe-area-inset-bottom) / 2);
+}

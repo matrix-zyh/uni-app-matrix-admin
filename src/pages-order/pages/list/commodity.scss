@@ -1,0 +1,124 @@
+.commodity-search {
+  width: 100%;
+  position: fixed;
+  z-index: 9;
+}
+
+.cu-bar .search-form {
+  background-color: #fff;
+  border: 1upx solid #7a76ef;
+}
+
+.cu-btn {
+  color: #222;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.commodity-list {
+  width: 560upx;
+  background-color: #fff;
+
+  .commodity-title {
+    color: #222;
+    font-size: 32upx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .commodity-reserve {
+      height: 100%;
+      font-size: 24upx;
+      color: #666;
+      display: flex;
+      align-items: center;
+      margin-left: 30upx;
+    }
+  }
+
+  .commodity-content {
+    margin-top: 10upx;
+    height: 160upx;
+    display: flex;
+
+    .commodity-image {
+      width: 190upx;
+      height: 100%;
+      border-radius: 8upx;
+      overflow: hidden;
+
+      image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .commodity-info {
+      margin-left: 30upx;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .commodity-classify {
+        width: 200upx;
+        height: 45upx;
+        color: #666;
+        border-radius: 8upx;
+        padding: 0 10upx;
+        background-color: #f3f3f3;
+      }
+
+      .commodity-money {
+        color: #e60000;
+      }
+    }
+  }
+}
+
+.commodity-footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 9;
+
+  .commodity-footer__block {
+    width: 100%;
+    height: 100upx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .commodity-footer__text {
+      color: #aaa;
+    }
+
+    .commodity-footer__btn {
+      width: 200upx;
+      height: 100%;
+      color: #fff;
+      font-size: 32upx;
+      background-color: #8b7df6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+/deep/ .u-input {
+  height: 45upx;
+}
+
+/deep/ .u-checkbox {
+  width: 100% !important;
+  padding: 20upx;
+  background-color: #fff;
+  border-radius: 20upx;
+  margin-bottom: 20upx;
+}
+
+/deep/ .u-checkbox__icon-wrap--square {
+  margin-top: 50upx;
+}

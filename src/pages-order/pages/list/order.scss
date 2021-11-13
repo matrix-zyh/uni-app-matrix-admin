@@ -1,0 +1,54 @@
+.commodity-search {
+  width: 100%;
+  position: fixed;
+  z-index: 9;
+}
+
+.cu-bar .search-form {
+  background-color: #fff;
+  border: 1upx solid #7a76ef;
+}
+
+.cu-btn {
+  color: #222;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+/deep/ .u-dropdown {
+  background-color: #fff;
+}
+/deep/ .u-drawer-top {
+  background-color: transparent !important;
+}
+
+.radius-20 {
+  border-radius: 20upx;
+}
+
+.radius-20 + .radius-20 {
+  margin-top: 30upx;
+}
+
+.commodity-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .commodity-header__title {
+    font-size: 36upx;
+    color: #2c2c2c;
+  }
+}
+
+.commodity-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30upx;
+
+  .commodity-footer__date {
+    color: #ff9d17;
+  }
+}

@@ -1,0 +1,122 @@
+.user-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+
+  image {
+    width: 40upx;
+    height: 40upx;
+    margin-right: 10upx;
+  }
+
+  .user-info__text {
+    color: #222;
+    font-size: 32upx;
+  }
+}
+
+.order-time {
+  width: 100%;
+  height: 70upx;
+  border-radius: 8upx;
+  border: 1upx solid #dcdfe6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .order-time__img {
+    display: flex;
+    align-items: center;
+
+    image {
+      width: 36upx;
+      height: 36upx;
+    }
+  }
+}
+
+.order-commodity {
+  background-color: #fff;
+
+  .order-commodity__list {
+    border-radius: 14upx;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f6f5ff;
+
+    .order-commodity__image {
+      width: 180upx;
+      height: 180upx;
+      border-radius: 8upx;
+      overflow: hidden;
+
+      image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .order-commodity__info {
+      width: 420upx;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .order-commodity__info-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .order-commodity__info-header__title {
+          font-size: 32upx;
+          color: #222;
+        }
+
+        .order-commodity__info-headet__reserve {
+          color: #666;
+        }
+      }
+
+      .order-commodity__info-classify {
+        width: 200upx;
+        height: 45upx;
+        color: #666;
+        border-radius: 8upx;
+        padding: 0 10upx;
+        background-color: #f3f3f3;
+      }
+
+      .order-commodity__info-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .order-commodity__info-footer__money {
+          color: #e60000;
+        }
+      }
+    }
+  }
+
+  .order-commodity__list + .order-commodity__list {
+    margin-top: 20upx;
+  }
+}
+
+.order-add-btn {
+  width: 100%;
+  height: 100upx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirm-button {
+  padding: 30upx 75upx;
+
+  .button-purple {
+    color: #fff;
+    background-color: #8b7df6;
+  }
+}
